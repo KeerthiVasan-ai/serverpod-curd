@@ -1,0 +1,9 @@
+### A search result containing a note and its similarity score to the search query.
+class: NoteSearchResult
+
+fields:
+  ### The matched note.
+  note: Note
+
+  ### The cosine similarity score (0.0 to 1.0). Higher means more relevant.
+  score: double

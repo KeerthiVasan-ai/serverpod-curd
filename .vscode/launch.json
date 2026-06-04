@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "smart_notes_flutter",
+            "cwd": "${workspaceFolder}/smart_notes_flutter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart"
+        },
+        {
+            "name": "smart_notes_server",
+            "cwd": "${workspaceFolder}/smart_notes_server",
+            "request": "launch",
+            "type": "dart",
+            "preLaunchTask": "docker_compose_up",
+            "program": "bin/main.dart",
+            "env": {
+                "SERVERPOD_PASSWORD_database": "xFU75Fos7hNV_3yKO6M8O4AivaQIJZ7W"
+            },
+            "args": [
+                "--apply-migrations"
+            ]
+        }
+    ],
+    "compounds": [
+        {
+            "name": "smart_notes (full stack)",
+            "configurations": [
+                "smart_notes_server",
+                "smart_notes_flutter"
+            ],
+            "presentation": {
+                "order": 1
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+name: _
+publish_to: none
+
+environment:
+  sdk: '^3.8.0'
+
+workspace:
+  - smart_notes_client
+  - smart_notes_server
+  - smart_notes_flutter
+
