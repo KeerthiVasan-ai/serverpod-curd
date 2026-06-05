@@ -4,3 +4,9 @@
 
 # Pubspec overrides
 pubspec_overrides.yaml
+
+# FVM Version Cache
+.fvm/
+
+# Scratch folder
+scratch/
