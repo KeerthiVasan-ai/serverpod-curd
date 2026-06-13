@@ -5,9 +5,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:smart_notes_client/smart_notes_client.dart';
 import 'package:serverpod_flutter/serverpod_flutter.dart';
 
-// ─────────────────────────────────────────────
-// Global Serverpod client
-// ─────────────────────────────────────────────
 late final Client client;
 
 void main() async {
@@ -18,9 +15,6 @@ void main() async {
   runApp(const SmartNotesApp());
 }
 
-// ─────────────────────────────────────────────
-// App Root
-// ─────────────────────────────────────────────
 class SmartNotesApp extends StatelessWidget {
   const SmartNotesApp({super.key});
 
@@ -67,9 +61,6 @@ class SmartNotesApp extends StatelessWidget {
   }
 }
 
-// ─────────────────────────────────────────────
-// Design Tokens
-// ─────────────────────────────────────────────
 class AppColors {
   static const background = Color(0xFF0D0D14);
   static const surface = Color(0xFF16161F);
@@ -85,9 +76,7 @@ class AppColors {
   static const textMuted = Color(0xFF55556A);
 }
 
-// ─────────────────────────────────────────────
-// Home Screen
-// ─────────────────────────────────────────────
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
